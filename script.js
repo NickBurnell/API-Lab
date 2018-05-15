@@ -1,8 +1,8 @@
 "use strict";
 $(document).ready(() => {
-    $.get('https://www.reddit.com/r/shittyrainbow6/.json').then((data) => {
+    $.get('https://www.reddit.com/r/pitbulls_in_partyhats/.json').then((data) => {
         console.log(data);
-        for (let i = 2; i < 12; i++) {
+        for (let i = 0; i < 10; i++) {
             let title = data.data.children[i].data.title;
             let img = data.data.children[i].data.thumbnail;
             let link = data.data.children[i].data.permalink;
